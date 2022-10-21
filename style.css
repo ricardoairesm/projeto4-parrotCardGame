@@ -2,13 +2,27 @@
   box-sizing: border-box;
 }
 
+img{
+  height: 100px;
+  width: 100px;
+}
+
+.espaco-cartas{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1210px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
 .fundo {
   display: flex;
-  height: 100%;
+  height: 960px;
   width: 100%;
   background-color: #e5e5e5;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
 }
 
@@ -17,17 +31,21 @@ h1 {
   font-size: 56px;
   position: absolute;
   top: 40px;
-  left: 285px;
+  left: 320px;
   color: #75B79E;
 }
 
 .caixa-principal {
   display: flex;
-  width: 1110px;
-  height: 629px;
+  justify-content: space-around;
+  width: 1210px;
+  height: 800px;
   background-color: #eef9bf;
   position: relative;
   flex-wrap: wrap;
+  padding-left: 122px;
+  padding-right: 122px;
+  align-items: flex-start;
 }
 
 
@@ -37,22 +55,21 @@ h1 {
 }
 
 .card {
-  width: 200px;
-  height: 250px;
+  margin-top: 150px;
+  width: 160px;
   position: relative;
+  margin-bottom: 56px;
 }
 
 .face {
   height: 146px;
   width: 117px;
-  left: 122px;
-  top: 150px;
   border-radius: 5px;
   background-color: #A7E9AF;
   border: 1px solid #99CEA8;
   position: absolute;
-  top: 150px;
-  left: 122px;
+  top: 0px;
+  left: 0px;
   backface-visibility: hidden;
   transition: all .5s;
   transform-style: preserve-3d;

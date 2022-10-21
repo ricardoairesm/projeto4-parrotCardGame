@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+.fundo {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #e5e5e5;
+  align-items: center;
+  justify-content: center;
+
+}
+
+h1 {
+  font-family: Roboto;
+  font-size: 56px;
+  position: absolute;
+  top: 40px;
+  left: 285px;
+  color: #75B79E;
+}
+
+.caixa-principal {
+  display: flex;
+  width: 1110px;
+  height: 629px;
+  background-color: #eef9bf;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+
+.front-face img {
+  margin-top: 24px;
+  margin-left: 10px;
+}
+
+.card {
+  width: 200px;
+  height: 250px;
+  position: relative;
+}
+
+.face {
+  height: 146px;
+  width: 117px;
+  left: 122px;
+  top: 150px;
+  border-radius: 5px;
+  background-color: #A7E9AF;
+  border: 1px solid #99CEA8;
+  position: absolute;
+  top: 150px;
+  left: 122px;
+  backface-visibility: hidden;
+  transition: all .5s;
+  transform-style: preserve-3d;
+
+}
+
+.back-face {
+  display: flex;
+  transform: rotateY(180deg);
+  align-items: center;
+  justify-content: center;
+
+}
+
+.virar1 {
+  transform: rotateY(-180deg);
+}
+
+.virar2 {
+  transform: rotateY(0deg);
+}
